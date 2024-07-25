@@ -1,0 +1,6 @@
+<textarea
+	cols="50"
+	rows="50"
+	[ngModel]="service.def() | json"
+	(ngModelChange)="update($event)"
+></textarea>

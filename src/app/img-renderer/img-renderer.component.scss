@@ -1,0 +1,13 @@
+:host {
+	position: relative;
+	margin-top: 8px;
+}
+canvas {
+	image-rendering: pixelated;
+}
+
+.overlayed {
+	position: absolute;
+	top: 0;
+	left: 0;
+}

@@ -1,0 +1,9 @@
+<canvas #canvas></canvas>
+<canvas
+	#canvas2
+	class="overlayed"
+	(mousedown)="mouseDown($event)"
+	(mouseup)="mouseUp($event)"
+	(mousemove)="mouseMove($event)"
+	(mouseleave)="mouseUp($event)"
+></canvas>
