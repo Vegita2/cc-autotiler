@@ -100,6 +100,20 @@ export class ImgRendererComponent implements OnInit {
 			autotile.size.x * TILE_SIZE,
 			autotile.size.y * TILE_SIZE,
 		);
+		
+		const centerX = (autotile.base.x + autotile.size.x / 2) * TILE_SIZE - 6;
+		const centerY = (autotile.base.y + autotile.size.y / 2) * TILE_SIZE + 5;
+		
+		ctx.font = '16px Sans-serif'
+		ctx.strokeStyle = 'black';
+		ctx.lineWidth = 1;
+		const x = autotile.base.x * TILE_SIZE + 2;
+		const y = autotile.base.y * TILE_SIZE + 14;
+		ctx.strokeText(autotile.size.x.toString(), centerX, y)
+		ctx.strokeText(autotile.size.y.toString(), x, centerY)
+		ctx.fillStyle = 'white';
+		ctx.fillText(autotile.size.x.toString(), centerX, y)
+		ctx.fillText(autotile.size.y.toString(), x, centerY)
 	}
 	
 	clear() {
