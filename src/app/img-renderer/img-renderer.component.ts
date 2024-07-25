@@ -54,6 +54,7 @@ export class ImgRendererComponent implements OnInit {
 			
 			const def = this.copy(untracked(service.def));
 			def.tileCountX = img.width / TILE_SIZE;
+			def.autotiles = [];
 			service.def.set(def);
 		}, { allowSignalWrites: true });
 		
